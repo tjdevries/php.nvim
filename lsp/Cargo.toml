@@ -1,0 +1,24 @@
+[package]
+name = "lsp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.76"
+dashmap = "5.5.3"
+serde = "1.0.193"
+serde_json = "1.0.108"
+tokio = { version = "1.35.1", features = ["full"] }
+tower-lsp = "0.20.0"
+tracing = "0.1.40"
+tracing-appender = "0.2.3"
+tracing-subscriber = "0.3.18"
+tree-sitter = "0.20.10"
+
+# Custom deps
+tree-sitter-blade = { git = "https://github.com/EmranMR/tree-sitter-blade/", rev = "01e5550cb60ef3532ace0c6df0480f6f406113ff" }
+tree-sitter-html = { git = "https://github.com/tree-sitter/tree-sitter-html/", rev = "d742025fa2d8e6100f134a6ea990443aa1f074b3" }
+tree-sitter-php = { git = "https://github.com/calebdw/tree-sitter-php", rev = "5b8d15442a36086b90c966e6717a9697ef07eaf7" }
+# tree-sitter-php = "0.20.0"

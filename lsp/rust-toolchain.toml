@@ -1,0 +1,4 @@
+[toolchain]
+channel = "nightly"
+components = [ "clippy", "llvm-tools-preview", "rust-analyzer", "rust-src" ]
+profile = "default"
